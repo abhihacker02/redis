@@ -22,9 +22,10 @@ My first instinct was of using a MySQL database but then after giving it a consi
 # Further Improvements that can be made
 
 1. We are reading from the files when the application starts and dumping the data into the files when the application ends. Instead if we use MySql database then we can remove the data from the database as soon as it is cleared from the table. In the present solution the database contains the data (even if it is removed from maps during runtime) till the application ends which can be improved although the present solution doesn’t give errors because we don’t read from file once the program has started(only once file is read during initialization).
-2. We have the code of initialization(which happens only once) in the Redis class itself but since it is done only one time when the App loads we can have a Singleton Class for it which will return the maps filled with data read from the files. This will make it more modular. (I didn’t implement it because of lack of time and also I had a fever).
-3. We can also use a hashmap for rank which will give the rank of a member in a sorted set in O(1) time. We would have to update that hashmap whenever insertion occurs in that sorted set.
-4. We can schedule the refreshing of maps(remove keys which have expired) periodically with some scheduler which will be more efficient.
+2. We can implement a modification of Balanced Binary Search Tree for sorted sets whose nodes will also contain the number of elements in it’s left and right subtree. With this we can very very efficiently query the ZRANGE and ZRANK queries. Unfortunately no language provides this feature yet.
+3. We have the code of initialization(which happens only once) in the Redis class itself but since it is done only one time when the App loads we can have a Singleton Class for it which will return the maps filled with data read from the files. This will make it more modular. (I didn’t implement it because of lack of time and also I had a fever).
+4. We can also use a hashmap for rank which will give the rank of a member in a sorted set in O(1) time. We would have to update that hashmap whenever insertion occurs in that sorted set.
+5. We can schedule the refreshing of maps(remove keys which have expired) periodically with some scheduler which will be more efficient.
 
 # Does the Application support multithreading?
 
