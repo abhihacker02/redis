@@ -50,8 +50,8 @@ And most importantly the data is always stored somewhere apart from the Data Str
 12. To end the Program enter END.
 
 # Implemented by:
-         aAbhirav Sati
-				 IIT Patna
-				 Contact No: 9955527784
-				 Email: abhi04.sati@gmail.com
+        Abhirav Sati
+	IIT Patna
+	Contact No: 9955527784
+	Email: abhi04.sati@gmail.com
 
