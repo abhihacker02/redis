@@ -43,13 +43,11 @@ And most importantly the data is always stored somewhere apart from the Data Str
 5. To use EXPIRE command enter EXPIRE key time. Sets the expire time of the key.
 6. To use the ZADD command enter ZADD key score1 member1 score2 member2 ….. Add as many members you want to the sorted set.
 7. To use ZRANK command enter ZRANK key member. Returns the rank of the member.
-8. To use ZRANGE command enter 
-9. ZRANGE key start_index end_index OR
-10. ZRANGE key start_index end_index WITHSCORES
-11. To use ZSCORE command enter ZSCORE key member
-12. To use TTL command enter TTL key
-13. To use DEL command enter key1 key2 key 3….Enter as many keys as you want to delete.
-14. To end the Program enter END.
+8. To use ZRANGE command enter ZRANGE key start_index end_index OR ZRANGE key start_index end_index WITHSCORES
+9. To use ZSCORE command enter ZSCORE key member
+10. To use TTL command enter TTL key
+11. To use DEL command enter key1 key2 key 3….Enter as many keys as you want to delete.
+12. To end the Program enter END.
 
 # Implemented by:
          aAbhirav Sati
