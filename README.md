@@ -47,7 +47,7 @@ And most importantly the data is always stored somewhere apart from the Data Str
 8. To use ZRANGE command enter ZRANGE key start_index end_index OR ZRANGE key start_index end_index WITHSCORES
 9. To use ZSCORE command enter ZSCORE key member
 10. To use TTL command enter TTL key
-11. To use DEL command enter key1 key2 key 3….Enter as many keys as you want to delete.
+11. To use DEL command enter DEL key1 key2 key 3….Enter as many keys as you want to delete.
 12. To end the Program enter END.
 
 # Implemented by:
